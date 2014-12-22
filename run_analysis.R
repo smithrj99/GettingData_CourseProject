@@ -116,7 +116,7 @@ subject_means <- ddply(subjects, .(SubjectId, `Activity Name`), numcolwise(mean)
 
 # 5c. Save the means to file for upload to Coursera
 
-write.table(subject_means, "./data/tidy_means_subject_activity.txt")
+write.table(subject_means, "./data/tidy_means_subject_activity.txt", row.name=FALSE )
 
 
 
